@@ -3,11 +3,11 @@ import './Search.css'
 
 function Search(props) {
   const { users, onSearch } = props;
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchString, setSearchString] = useState('');
 
   const handleSearchChange = (event) => {
     const value = event.target.value;
-    setSearchTerm(value);
+    setSearchString(value);
     const filteredUsers = users.filter((user) =>
       user.name.toLowerCase().includes(value.toLowerCase())
     );
@@ -20,7 +20,7 @@ function Search(props) {
       <input
         type="text"
         id="search-input"
-        value={searchTerm}
+        value={searchString}
         onChange={handleSearchChange}
       />
     </div>
