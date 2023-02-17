@@ -1,0 +1,56 @@
+.contactCard {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    max-height: 80%;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  }
+  
+  .contactCard button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .contactCard h3 {
+    margin-top: 0;
+    font-size: 28px;
+  }
+  
+  .contactCard img {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contactCard p {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .contactCard {
+      width: 90%;
+    }
+    
+    .contactCard img {
+      width: 150px;
+      height: 150px;
+    }
+  }

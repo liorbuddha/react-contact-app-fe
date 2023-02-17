@@ -1,0 +1,129 @@
+/* .editFormContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Edit form content */
+  /*
+  .editFormContent {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .editFormContent h2 {
+    margin-top: 0;
+  }
+  
+  .editFormContent label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .editFormContent input,
+  .editFormContent textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  
+  .editFormContent button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .editFormContent button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .editFormContent button:last-child {
+    background-color: #f44336;
+  }
+  
+  .editFormContent button:last-child:hover {
+    background-color: #c9302c;
+  }
+  
+  @media (max-width: 600px) {
+    .editFormContent {
+      max-width: 100%;
+    }
+  } */
+  .editFormContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+  }
+  
+  .editFormContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .editFormContent label {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .editFormContent input,
+  .editFormContent textarea {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .editFormContent button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+  
+  .editFormContent button[type="button"] {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .editFormContent button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .editFormContent button[type="button"]:hover {
+    background-color: #bbb;
+  }
+  
